@@ -340,7 +340,7 @@ const configureGrunt = function (grunt) {
                 expand: true,
                 cwd: '.github/hooks',
                 src: ['*'],
-                dest: '.git/hooks'
+                dest: '../.git/modules/ghost/hooks'
             }
         }
     };
