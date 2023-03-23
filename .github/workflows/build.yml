@@ -38,13 +38,13 @@ jobs:
 
       - run: grunt release --skip-update
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: ghost-canary
           path: .dist/release/*
           retention-days: 7
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: ghost-latest
           path: .dist/release/*
